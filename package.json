@@ -21,7 +21,8 @@
   "scripts": {
     "build": "yarn build:esm && yarn build:cjs",
     "build:esm": "tsc",
-    "build:cjs": "tsc --module commonjs --outDir lib/cjs"
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs",
+    "preversion": "yarn build"
   },
   "devDependencies": {
     "@types/react": "^18.0.21",
