@@ -12,7 +12,7 @@ export const ComposeProvider: React.FC<Props> = ({ components, children }) => (
       const [Provider, props] = Array.isArray(curr)
         ? [curr[0], curr[1]]
         : [curr, {}];
-      //@ts-expect-error: Haven't been able to solve the issue with children
+
       return <Provider {...props}>{acc}</Provider>;
     }, children)}
   </>

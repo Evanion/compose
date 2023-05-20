@@ -29,7 +29,7 @@ const App: React.FC = () => {
 };
 ```
 
-This component let's you go to this:
+This package let's you go to this:
 
 ```tsx
 const providers = [
@@ -44,7 +44,7 @@ const providers = [
 
 const App: React.FC = () => {
   return (
-    <ComposeProvider providers={providers}>
+    <ComposeProvider components={providers}>
       <Routes />
     </ComposeProvider>
   );
