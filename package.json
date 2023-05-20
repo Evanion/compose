@@ -23,10 +23,7 @@
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir lib/cjs",
     "preversion": "yarn build",
-    "publish": "yarn build && yarn publish:tag",
-    "publish:patch": "yarn publish:tag && npm version patch && yarn publish",
-    "publish:minor": "yarn publish:tag && npm version minor && yarn publish",
-    "publish:tag": "git push --follow-tags origin master && npm publish"
+    "version": "standard-version"
   },
   "devDependencies": {
     "@types/react": "^18.2.6",
@@ -34,5 +31,8 @@
   },
   "peerDependencies": {
     "react": ">16"
+  },
+  "dependencies": {
+    "standard-version": "^9.5.0"
   }
 }
