@@ -27,10 +27,16 @@
   },
   "devDependencies": {
     "@types/react": "^18.2.6",
+    "cz-conventional-changelog": "^3.3.0",
     "standard-version": "^9.5.0",
     "typescript": "^5.0.4"
   },
   "peerDependencies": {
     "react": ">16"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   }
 }
