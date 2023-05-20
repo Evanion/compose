@@ -6,3 +6,5 @@ export type Component =
   | ComponentType<PropsWithChildren>
   | [ComponentType, PropsWithChildren<Record<string, unknown>>]
   | ReturnType<typeof forwardRef>;
+
+export type Provider = Component;

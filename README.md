@@ -32,7 +32,8 @@ const App: React.FC = () => {
 This package let's you go to this:
 
 ```tsx
-const providers = [
+import { Provider, ComposeProvider } from "@evanion/compose";
+const providers: Provider[] = [
   ErrorBoundary,
   [CacheProvider, { value: emotionCache }],
   [ThemeProvider, { theme }],
@@ -44,9 +45,11 @@ const providers = [
 
 const App: React.FC = () => {
   return (
-    <ComposeProvider components={providers}>
+    <ComposeProvider providers={providers}>
       <Routes />
     </ComposeProvider>
   );
 };
 ```
+
+_In previous versions of the documentation, the documentation said that the prop should be called `providers` but the code expected `components`. This has been fixed in version 1.0.4. And `ComposeProvider` now accepts either `providers` or `components` as a prop. Sorry for the inconvenience._

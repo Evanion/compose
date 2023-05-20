@@ -1,19 +1,30 @@
 import * as React from "react";
-import { Component } from "./Compose.types";
+import { Provider } from "./Compose.types";
 
-interface Props {
-  components: Component[];
-  children: React.ReactNode;
-}
+type ComponentProps = {
+  components: Provider[];
+  providers: undefined;
+};
 
-export const ComposeProvider: React.FC<Props> = ({ components, children }) => (
-  <>
-    {components.reverse().reduce((acc, curr) => {
-      const [Provider, props] = Array.isArray(curr)
-        ? [curr[0], curr[1]]
-        : [curr, {}];
+type ProviderProps = {
+  providers: Provider[];
+  components: undefined;
+};
 
-      return <Provider {...props}>{acc}</Provider>;
-    }, children)}
-  </>
-);
+export const ComposeProvider: React.FC<
+  React.PropsWithChildren<ComponentProps | ProviderProps>
+> = ({ children, components, providers }) => {
+  components = components || providers;
+
+  return (
+    <>
+      {components.reverse().reduce((acc, curr) => {
+        const [Provider, props] = Array.isArray(curr)
+          ? [curr[0], curr[1]]
+          : [curr, {}];
+
+        return <Provider {...props}>{acc}</Provider>;
+      }, children)}
+    </>
+  );
+};
