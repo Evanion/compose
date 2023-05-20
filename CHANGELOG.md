@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.5](https://github.com/Evanion/compose/compare/v1.0.4...v1.0.5) (2023-05-20)
+
+
+### Bug Fixes
+
+* **types:** simplifed and fixed component/provider type to be better compatible ([897babd](https://github.com/Evanion/compose/commit/897babdd8a41b211dd991a5d3c70dc6cc4f4bfd5))
+
 ### [1.0.4](https://github.com/Evanion/compose/compare/v1.0.2...v1.0.4) (2023-05-20)
 
 
