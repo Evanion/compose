@@ -1,14 +1,14 @@
 import * as React from "react";
-import { Provider } from "./Compose.types";
+import { Component, Provider } from "./Compose.types";
 
 type ComponentProps = {
-  components: Provider[];
-  providers: undefined;
+  components: Component[];
+  providers?: never;
 };
 
 type ProviderProps = {
   providers: Provider[];
-  components: undefined;
+  components?: never;
 };
 
 export const ComposeProvider: React.FC<
