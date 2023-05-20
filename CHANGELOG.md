@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.4](https://github.com/Evanion/compose/compare/v1.0.2...v1.0.4) (2023-05-20)
+
+
+### Bug Fixes
+
+* **props:** code and docs referenced different props ([1777a4a](https://github.com/Evanion/compose/commit/1777a4aaa6f02ce634d41e8b1ad1f4b1c99e27b5))
+* **types:** add forwardRef as a valid component type ([543b016](https://github.com/Evanion/compose/commit/543b0164c3f42307e4f86b9965024b90d3fcd7cc))
+
 ### [1.0.3](https://github.com/Evanion/compose/compare/v1.0.2...v1.0.3) (2023-05-20)
 
 ### Bug Fixes
