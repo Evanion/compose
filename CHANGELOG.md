@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.8](https://github.com/Evanion/compose/compare/v1.0.7...v1.0.8) (2023-05-29)
+
+
+### Bug Fixes
+
+* **type:** proper fix prop when usign tuple ([48a7f64](https://github.com/Evanion/compose/commit/48a7f64826e1d07d1f64ad52ea2a25fed401b5d8))
+
 ### [1.0.7](https://github.com/Evanion/compose/compare/v1.0.6...v1.0.7) (2023-05-29)
 
 
