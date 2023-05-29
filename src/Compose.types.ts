@@ -1,9 +1,9 @@
 import { ComponentType, PropsWithChildren, forwardRef } from "react";
 
-export type Component =
-  | ComponentType<Required<PropsWithChildren>>
+export type Component<T = Required<PropsWithChildren>> =
+  | ComponentType<T>
   | ReturnType<typeof forwardRef>
-  | [ComponentType<Required<PropsWithChildren>>, Record<string, unknown>]
-  | [ReturnType<typeof forwardRef>, Record<string, unknown>];
+  | [ComponentType<T>, Omit<T, "children">]
+  | [ReturnType<typeof forwardRef>, Omit<T, "children">];
 
 export type Provider = Component;
