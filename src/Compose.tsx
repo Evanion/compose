@@ -12,7 +12,7 @@ type ProviderProps = {
 };
 
 export const ComposeProvider: React.FC<
-  Required<React.PropsWithChildren<ComponentProps | ProviderProps>>
+  (ComponentProps | ProviderProps) & Required<React.PropsWithChildren<{}>>
 > = ({ children, components, providers }) => {
   components = components || providers;
 
