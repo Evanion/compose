@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.6](https://github.com/Evanion/compose/compare/v1.0.5...v1.0.6) (2023-05-29)
+
+
+### Bug Fixes
+
+* **type:** correct typr for tuples with props ([3456e91](https://github.com/Evanion/compose/commit/3456e911cc72e0ea99c9d5ebfaf408a92049e36d))
+
 ### [1.0.5](https://github.com/Evanion/compose/compare/v1.0.4...v1.0.5) (2023-05-20)
 
 
